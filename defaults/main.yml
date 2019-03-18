@@ -1,0 +1,15 @@
+---
+# defaults file for elasticsearch
+
+destFolder: "{{ ansible_env.HOME }}/.k8s-team/kibana"
+state: present
+
+releaseName:  kibana
+
+elasticsearch:
+  url: http://elasticsearch-service:9200
+
+ingress:
+  enabled: false
+  host: kibana.example.com
+
